@@ -1,0 +1,76 @@
+---
+title: Forms
+---
+
+<form action="/form-results" method="get" id="forms-page">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="firstName">First name</label>
+            <input class="form-control" id="firstName" name="firstName" type="text" placeholder="First name"/>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="lastName">Last name</label>
+            <input class="form-control" id="lastName" name="lastName" type="text" placeholder="Last name"/>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-12">
+            <label for="address">Address</label>
+            <input class="form-control" id="address" name="address" type="text" placeholder="Walking Street"/>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-12">
+            <label for="address2">Address 2</label>
+            <input class="form-control" id="address2" name="address2" type="text" placeholder="Apartment, studio, or floor"/>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="city">City</label>
+            <input class="form-control" id="city" name="city" type="text"/>
+        </div>
+        <div class="form-group col-md-2">
+            <label for="zip">Zip</label>
+            <input class="form-control" id="zip" name="zip" type="text"/>
+        </div>
+        <div class="form-group col-md-4">
+            <label for="country">Country</label>
+            <select class="form-control" id="country" name="country">
+                <option selected="">Choose...</option>
+                <option>Finland</option>
+                <option>Sweden</option>
+                <option>Norway</option>
+                <option>Denmark</option>
+                <option>Iceland</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <div class="form-check">
+                <input class="form-check-input" id="check1" name="check1" type="checkbox"/>
+                <label class="form-check-label" for="check1">First checkbox</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" id="check2" name="check2" type="checkbox"/>
+                <label class="form-check-label" for="check2">Second checkbox</label>
+            </div>
+        </div>
+        <div class="form-group col-md-6">
+            <div class="form-check">
+                <input class="form-check-input" id="radio-1" type="radio" name="radios" value="first radio button" checked=""/>
+                <label class="form-check-label" for="radio-1">First radio button</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" id="radio-2" type="radio" name="radios" value="second radio button"/>
+                <label class="form-check-label" for="radio-2">Second radio button</label>
+            </div>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+    </div>
+</form>

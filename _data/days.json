@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Monday",
+    "weather": "cloudy"
+  },
+  {
+    "name": "Tuesday",
+    "weather": "sunny"
+  },
+  {
+    "name": "Wednesday",
+    "weather": "rainy"
+  },
+  {
+    "name": "Thursday",
+    "weather": "sunny"
+  },
+  {
+    "name": "Friday",
+    "weather": "cloudy"
+  },
+  {
+    "name": "Saturday",
+    "weather": "sunny"
+  },
+  {
+    "name": "Sunday",
+    "weather": "sunny"
+  }
+]

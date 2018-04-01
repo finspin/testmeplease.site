@@ -1,0 +1,26 @@
+language: ruby
+rvm:
+- 2.3.3
+
+install:
+  - gem install jekyll
+  - pip install --user awscli
+
+script:
+  - jekyll build
+
+deploy:
+  on:
+    branch: master
+  provider: s3
+  bucket: www.testmeplease.site
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  region: us-west-2
+  acl: public_read
+  skip_cleanup: true
+  local_dir: ./_site
+  
+after_deploy:
+  - aws configure set preview.cloudfront true
+  - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"

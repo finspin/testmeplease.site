@@ -1,0 +1,1 @@
+This is a starter for creating Jekyll site with Bootstrap and deploying it to AWS S3 bucket with Travis CI. Contribution is welcome!

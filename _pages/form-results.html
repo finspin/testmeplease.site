@@ -1,0 +1,73 @@
+---
+title: Form Results
+---
+
+
+<table class="table table-bordered">
+    <tbody>
+    <tr>
+        <th scope="row">First name</th>
+        <td class="firstName"></td>
+    </tr>
+    <tr>
+        <th scope="row">Last name</th>
+        <td class="lastName"></td>
+    </tr>
+    <tr>
+        <th scope="row">Address</th>
+        <td class="address"> </td>
+    </tr>
+    <tr>
+        <th scope="row">Address 2</th>
+        <td class="address2"></td>
+    </tr>
+    <tr>
+        <th scope="row">City</th>
+        <td class="city"></td>
+    </tr>
+    <tr>
+        <th scope="row">ZIP</th>
+        <td class="zip"></td>
+    </tr>
+    <tr>
+        <th scope="row">Country</th>
+        <td class="country"></td>
+    </tr>
+    <tr>
+        <th scope="row">First checkbox</th>
+        <td class="check1"></td>
+    </tr>
+    <tr>
+        <th scope="row">Second checkbox</th>
+        <td class="check2"></td>
+    </tr>
+    <tr>
+        <th scope="row">Radio button</th>
+        <td class="radios"></td>
+    </tr>
+    </tbody>
+</table>
+
+
+<script>
+    function getJsonFromUrl() {
+        const query = location.search.substr(1);
+        let result = {};
+
+        query.split("&").forEach(function (part) {
+            const item = part.split("=");
+            result[item[0]] = decodeURIComponent(item[1]);
+        });
+
+        return result;
+    }
+
+    params = getJsonFromUrl();
+
+    for (const key in params) {
+        if (params.hasOwnProperty(key)) {
+            const text = params[key].replace(/\+/g, " ").replace("Choose...", "");
+            $("td." + key).html(text);
+        }
+    }
+</script>
