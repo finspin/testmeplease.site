@@ -1,1 +1,3 @@
-This is a starter for creating Jekyll site with Bootstrap and deploying it to AWS S3 bucket with Travis CI. Contribution is welcome!
+[![Build Status](https://travis-ci.org/finspin/testmeplease.site.old.svg?branch=master)](https://travis-ci.org/finspin/testmeplease.site.old)
+
+Source code for https://www.testmeplease.site.
