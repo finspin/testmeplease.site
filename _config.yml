@@ -5,10 +5,3 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: "page"
-
-# Keep all pages in a directory
-# https://github.com/jekyll/jekyll/issues/920#issuecomment-315503935
-collections:
-  pages:
-    output: true
-    permalink: /:path

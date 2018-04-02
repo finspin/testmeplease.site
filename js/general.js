@@ -118,7 +118,7 @@ $(".login-form button[type='submit']").click(function(e) {
     const password = $("#password");
 
     if (username.val() === "user" && password.val() === "pass") {
-        window.location.replace("/profile");
+        window.location.replace("/profile/");
     } else {
         username.val("");
         password.val("");
